@@ -107,21 +107,18 @@ var TxtType = function(el, toRotate, period) {
 }
 #LandingBack{
     display: flex;
-    justify-content: flex-end;
-    background: url("../assets/LandingPage.jpg");
+    justify-content: center;
+    background: url("../assets/LandingPage.jpg")no-repeat center center/cover;
     width:100%;
     min-height: 100vh;
 background-attachment: fixed;
 
 }
 #content{
-    justify-self: flex-end;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-end;
 align-items: flex-start;
-width: 50%;
-border-right: 1px solid white;
 padding-left: 20px;
 }
 
@@ -156,7 +153,7 @@ padding-left: 20px;
 #border{
     border: 2px solid white;
     align-self: center;
-    height:140px
+    height:140px;
 }
 
 .fade-up-enter-from{
@@ -183,6 +180,31 @@ transform: translateY(0px);
 
 
 }
+
+@media(min-width:1440px){
+  .blobs-container{
+    right: 75%;
+  }
+
+  
+}
+
+@media(min-width:1024px){
+  .blobs-container{
+    right: 66%;
+  }
+
+  #Icon{
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+}
+ 
+
+
+
+  }
+
 
 .blob {
   background: black;

@@ -5,16 +5,16 @@
             <div class="card mt-3 ">
                 <div class="card-header bg-white text-center border-0 ">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/QddDKzH4/Muddathir.jpg" width="110" height="110"> </div>
+                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/QddDKzH4/Muddathir.jpg" style="width:15%; height:100%"> </div>
                     </div>
                     <div class="row text-center name">
-                        <div class="col">
+                        <div class="col mt-3">
                             <h5 class="mb-0 profile-pic">Muddathir Dawood</h5> <small class="mt-0">Colleague</small>
                             <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star-o mr-1"></span></p>
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0 text-center pb-3 ">
+                <div class="card-body pt-0 text-center pb-0 ">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col">
                             <p class="bold"><span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Jared is a developer with potential to become something great in the future. It is a pleasure watching his skill grow with each project he is given and motivates me and other to do better. He will add an enormous amount of value to any team<span><img class="img-fluid quotes-down" src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"> </span></p>
@@ -33,16 +33,16 @@
             <div class="card mt-3">
                 <div class="card-header bg-white text-center border-0 ">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/wvfT7dkk/Clayton.jpg" style="width:20%; height:100%"> </div>
+                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/wvfT7dkk/Clayton.jpg" style="width:15%; height:120%"> </div>
                     </div>
                     <div class="row text-center name">
-                        <div class="col">
+                        <div class="col mt-3">
                             <h5 class="mb-0 profile-pic">Clayton Adonis</h5> <small class="mt-0">Colleague</small>
                             <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span></p>
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0 text-center pb-3 ">
+                <div class="card-body pt-0 text-center pb-0">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col">
                             <p class="bold"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Jared is a fast learner that can grasp any new concept very quickly. He'll  put more than 100% into his tasks and finish them with more work done than he needed to do<span><img class="img-fluid quotes-down" src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"></span> </p>
@@ -61,16 +61,16 @@
             <div class="card mt-3">
                 <div class="card-header bg-white text-center border-0 ">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/fyRCfYmN/joel.jpg" style="width:20%; height:103%"> </div>
+                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/fyRCfYmN/joel.jpg" style="width:14.5%; height:125%"> </div>
                     </div>
                     <div class="row text-center name">
-                        <div class="col">
+                        <div class="col mt-2">
                             <h5 class="mb-0 profile-pic">Joel Mukanya</h5> <small class="mt-0">Lecturer</small>
                            <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span></p>
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0 text-center pb-3 ">
+                <div class="card-body pt-0 text-center pb-0 ">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col">
                             <p class="bold"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> I have no hesitancy in writing a letter of recommendation for Jared. He is a friendly, outgoing student who gets along well with the other students in the class and makes an effort to engage with the teacher. Jared has demonstrated a great grasp of the HTML & CSS topics we have covered in class. He has made great progress this semester. Godwin -Head of Curriculum and Learning<span><img class="img-fluid quotes-down" src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"> </span></p>
@@ -91,16 +91,16 @@
             <div class="card mt-3 ">
                 <div class="card-header bg-white text-center border-0 ">
                     <div class="row justify-content-center ">
-                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/tRLc3M7R/Saleem.jpg" style="width:20%; height:100%"> </div>
+                        <div class="col"> <img class="align-self-center text-center ima rounded-circle outside img-fluid" src="https://i.postimg.cc/tRLc3M7R/Saleem.jpg" style="width:15%; height:100%"> </div>
                     </div>
                     <div class="row text-center name">
-                        <div class="col">
+                        <div class="col mt-3">
                             <h5 class="mb-0 profile-pic">Saleem Ariefdien</h5> <small class="mt-0">Colleagues</small>
                             <p><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star mr-1"></span><span class="fa fa-star-o mr-1"></span></p>
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0 text-center pb-3 ">
+                <div class="card-body pt-0 text-center pb-0">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col">
                             <p class="bold"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Jared is one of the most helpful people I know, He is hardworking and his knowledge and skill in web development and having him would make him a great asset to your company<span><img class="img-fluid quotes-down" src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"> </span></p>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0 text-center pb-3 ">
+                <div class="card-body pt-0 text-center pb-0">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col">
                             <p class="bold"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Growth of data is exponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action <span><img class="img-fluid quotes-down" src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"></span> </p>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-body pt-0 text-center pb-3 ">
+                <div class="card-body pt-0 text-center pb-0 ">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col">
                             <p class="bold"> <span><img class="img-fluid quotes" src="https://i.imgur.com/U20aFIt.png" width="40" height="40"></span> Growth of data is exponential and our ability to get true insight that matter was challenging with classic, traditional Bi tools. Vertix allow us to unserstand what is driving exceptions so we can take action <span><img class="img-fluid quotes-down" src="https://i.imgur.com/DPzmyiD.png" width="40" height="40"> </span></p>
@@ -198,7 +198,7 @@ html{
 .testimon{
     position: absolute;
     background-size: cover;
-    color: rgb(112, 123, 240);
+    color:#8000ff;;
     background-color: #8000ff;
     background-repeat: no-repeat;
     z-index: -99;
@@ -251,7 +251,7 @@ p {
     background-color: rgb(146, 154, 236);
     border: 1px solid;
     border-radius: 20px;
-    color: rgb(146, 154, 236);
+    color: #8000ff;
     height: 5px;
     width: 70px !important
 }
@@ -275,7 +275,7 @@ p {
 }
 
 .fa {
-    color: rgb(174, 178, 219);
+    color:#8000ff;;
     cursor: pointer
 }
 
