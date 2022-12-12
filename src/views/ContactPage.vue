@@ -45,7 +45,7 @@ export default {
   components: { Footer },
 };
 </script>
-<style>
+<style scoped>
 
 
 

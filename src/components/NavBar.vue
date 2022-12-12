@@ -85,7 +85,7 @@ body{
 .navs-links a{
     color: #011a41;
     font-weight: 500;
-    padding: 5px 0;
+    padding: 25px 0;
     display: block;
     text-transform: capitalize;
     text-decoration: none;

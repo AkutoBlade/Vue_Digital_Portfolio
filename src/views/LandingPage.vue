@@ -99,27 +99,30 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 </script>
-<style>
+<style scoped>
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
+    overflow-y:hidden;
 }
 #LandingBack{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     background: url("../assets/LandingPage.jpg")no-repeat center center/cover;
     width:100%;
     min-height: 100vh;
 background-attachment: fixed;
+overflow-x:hidden
 
 }
 #content{
 display: flex;
 flex-direction: column;
-justify-content: flex-end;
+justify-content: center;
 align-items: flex-start;
 padding-left: 20px;
+width:65%
 }
 
 #title{
@@ -158,7 +161,7 @@ padding-left: 20px;
 
 .fade-up-enter-from{
     opacity: 0;
-    transform: translateY(270px);
+    transform: translateY(270px); 
 }
 
 .fade-up-enter-to{
@@ -176,22 +179,56 @@ transform: translateY(0px);
  align-items: flex-end;
  position: absolute;
  right: 73%;
- top:90%;
+ top:88%;
 
 
 }
 
-@media(min-width:1440px){
+@media(max-width:1440px) and (min-width:1025px){
   .blobs-container{
-    right: 75%;
+    right: 67%;
+  }
+}
+ @media(max-width:426px){
+  .blobs-container{
+  display: none;
+    right: 0% !important;
   }
 
-  
+    #Icon{
+    display: flex;
+    justify-content: space-between;
+    width:45%;
 }
 
-@media(min-width:1024px){
+  #content{
+  width: 89%;
+  }
+
+
+}
+   @media(max-width:769px) and (min-width:426px){
   .blobs-container{
-    right: 66%;
+    right: 46% !important;
+  }
+
+  #Icon{
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+}
+ 
+
+#content{
+width:80% !important;
+}
+
+  }
+
+
+@media(max-width:1024px) and (min-width:767px){
+  .blobs-container{
+    right: 59%;
   }
 
   #Icon{
