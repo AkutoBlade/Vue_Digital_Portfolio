@@ -118,18 +118,34 @@ export default {
 }
 #Box {
   width: 90vw;
-  height: 550px;
+  height: 500px;
   box-shadow: 0vw 0vw 2vw;
   border-radius: 50px;
   background: linear-gradient(white, #8000ff);
   overflow-y: hidden;
+  opacity:0.9;
 }
+
+
 #About {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
   background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
+}
+
+h6{
+font-size:13px
+}
+
+.skill_size{
+font-size:13px;
+width:100%;
+}
+
+.bio_text{
+font-size:13px;
 }
 
 .About-Me {
@@ -158,12 +174,14 @@ export default {
   flex-direction: row;
   margin-top: 1%;
   height: 54%;
+  width:100%;
   padding-bottom: 0px;
 }
 
 .left {
   border-left: 2px solid white;
-  padding-left: 20px;
+  padding-left: 1px;
+  width:200px;
 }
 
 .progress-bar {
@@ -194,11 +212,21 @@ export default {
   position: absolute;
   right: 65%;
   top: 10%;
+
 }
 
-@media(max-width:1440px) and (min-width:1023px){
+
+@media(max-width:1440px){
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+  background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
+}
+
 .images {
-  width: 23%!important;
+  width: 22%!important;
   border-radius: 10%;
   position: absolute;
   right: 67%;
@@ -215,13 +243,14 @@ export default {
 
 }
 
-@media(max-width:1024px) {
+@media(max-width:1024px) and (min-width: 768px) {
 .images {
+display:block !important;
   width: 24%!important;
   border-radius: 10%;
   position: absolute;
   right: 65%;
-  top: 15%!important;
+  top: 10%!important;
 }
 
 .skills {
@@ -240,6 +269,120 @@ export default {
   background: linear-gradient(white, #8000ff);
   overflow-y: hidden;
 }
+
+.Bio {
+  padding-top: 0px !important;
+  padding-left: 10px;
+  overflow: hidden;
+  color: #8000ff;
+}
+
+.bio_text{
+font-size:11px;
+}
+
+.skill_size{
+font-size:11px;
+}
+
+h6{
+font-size:11px
+}
+}
+
+@media(max-width:768px){
+
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
+}
+
+.images {
+display:none;
+  width: 30%!important;
+  border-radius: 10%;
+  position: absolute;
+  right: 62%;
+  top: 34%!important;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  height: 55%;
+  padding-bottom: 0px;
+}
+
+#Box {
+  width: 95vw;
+  height: 500px;
+  box-shadow: 0vw 0vw 2vw;
+  border-radius: 50px;
+  background: linear-gradient(white, #8000ff);
+  overflow-y: hidden;
+}
+
+.Bio {
+  padding-top: 0px !important;
+  padding-left: 10px;
+  overflow: hidden;
+  color: #8000ff;
+}
+
+.bio_text{
+font-size:11px;
+}
+
+.skill_size{
+font-size:11px;
+}
+
+h6{
+font-size:11px
+}
+
+
+}
+
+@media(width:425px){
+
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:150vh;
+  background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
+}
+
+#Box {
+  width: 95vw;
+  box-shadow: 0vw 0vw 2vw;
+  border-radius: 50px;
+  background: linear-gradient(white, #8000ff);
+  overflow-y: hidden;
+  height: 500px !important;
+}
+.images {
+  display:none!important;
+  width: 30%!important;
+  border-radius: 10%;
+  position:absolute;
+  right: 62%;
+  top: 23%!important;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  height: 55%;
+  padding-bottom: 0px;
+}
+
 
 .Bio {
   padding-top: 0px !important;

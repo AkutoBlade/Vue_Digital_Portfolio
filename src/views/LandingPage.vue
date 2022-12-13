@@ -26,10 +26,10 @@
 </h1> -->
 <transition name="fade-up" appear>
     <div id="Icon">
- <a href=""><i class="fa-brands fa-github"></i></a> 
-<a href=""><i class="fa-brands fa-linkedin"></i></a>
-<a href=""><i class="fa-brands fa-codepen"></i></a> 
-<a href=""><i class="fa-brands fa-twitter"></i></a>
+ <a href=""><i class="py-2 px-2 fa-brands fa-github"></i></a> 
+<a href=""><i class="py-2 px-2 fa-brands fa-linkedin"></i></a>
+<a href=""><i class="py-2 px-2 fa-brands fa-codepen"></i></a> 
+<a href=""><i class="py-2 px-2 fa-brands fa-twitter"></i></a>
  </div>
  </transition>
 
@@ -106,6 +106,8 @@ var TxtType = function(el, toRotate, period) {
     font-family: 'Poppins', sans-serif;
     overflow-y:hidden;
 }
+
+
 #LandingBack{
     display: flex;
     justify-content: flex-end;
@@ -138,6 +140,7 @@ width:65%
 .typewrite{
     text-decoration-line: none;
     color: white;
+    text-shadow: 0vw 0vw 10px white;
 }
 
 .typewrite:hover{
@@ -147,6 +150,7 @@ width:65%
     color: white;
     font-size:25px;
     gap: 10px;
+    text-shadow: 0vw 0vw 10px white;
 }
 #Icon{
     display: flex;
@@ -179,10 +183,12 @@ transform: translateY(0px);
  align-items: flex-end;
  position: absolute;
  right: 73%;
- top:88%;
+ top:85%;
 
 
 }
+
+
 
 @media(max-width:1440px) and (min-width:1025px){
   .blobs-container{

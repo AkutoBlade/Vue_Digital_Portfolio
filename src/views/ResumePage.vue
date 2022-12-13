@@ -1,5 +1,5 @@
 <template>
- <section id="history" class=" container rounded-2">
+ <section id="history" class=" container-fluid rounded-2">
         <div class="timeline" id="timeline">
           <div class="line"></div>
         
@@ -56,7 +56,17 @@ export default {
 #history {
     flex-direction: column;
     align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: url("../assets/LandingPage.jpg")no-repeat center center/cover;
+    width:100%;
+    min-height: 100vh;
+background-attachment: fixed;
+overflow-x:hidden
   }
+
+
+ 
   /* TIMELINE CONTAINER */
   .timeline {
     display: flex;
@@ -66,7 +76,6 @@ export default {
   .timeline-section,
   .timeline-modal {
     color: white;
-    margin: 2.5%;
     box-shadow: 0vw 0px 1vw rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -77,6 +86,7 @@ export default {
   .timeline-section:nth-of-type(even) {
     flex-direction: row-reverse;
     text-align: right;
+    margin-botttom: 2%;
   }
   
   .timeline-section:nth-of-type(odd) {

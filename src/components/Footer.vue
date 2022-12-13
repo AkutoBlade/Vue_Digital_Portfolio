@@ -62,11 +62,15 @@ export default {
 *{
   overflow: hidden;
 }
+
+
+
+
 .site-footer
 {
   background-color:#8000ff;
   padding:45px 0 20px;
-  font-size:15px;
+  font-size:11px;
   line-height:24px;
   color:lightgray;
   width: 100%;
@@ -83,7 +87,7 @@ export default {
 .site-footer h6
 {
   color:#fff;
-  font-size:16px;
+  font-size:13px;
   text-transform:uppercase;
   margin-top:5px;
   letter-spacing:2px
@@ -125,8 +129,8 @@ export default {
 }
 .site-footer .social-icons a
 {
-  width:40px;
-  height:40px;
+  width:28px;
+  height:28px;
   line-height:40px;
   margin-left:6px;
   margin-right:0;
@@ -228,9 +232,43 @@ export default {
   .texts-color>i{
     color:lightgray;
   }
+
+ 
 }
 
 
+
+@media(max-width:1024px) and (min-width:769px){
+
+.fa-facebook{
+ left:84.9%
+}
+
+.fa-twitter{
+ left:87.9%
+}
+
+.fa-dribbble{
+  left:90.8%
+}
+
+.fa-linkedin{
+  left:93.8%
+}
+
+.fa{
+  width:16px;
+  height:16px;
+  position: absolute;
+  top: 152.6%;
+}
+
+.site-footer .social-icons a
+{
+  width:24px;
+  height:24px;
+}
+}
 
 
 </style>

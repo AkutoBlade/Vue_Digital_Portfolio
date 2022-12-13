@@ -1,7 +1,7 @@
 <template>
    <header>
     <input type="checkbox" id="checkBox">
-    <div class="toggle" @click="handleEvent">
+    <div  class="toggle" @click="handleEvent">
         <span class="top_line common"></span>
         <span class="middle_line common"></span>
         <span class="bottom_line common"></span>
@@ -62,7 +62,7 @@ body{
 .slide{
     height:100%;
     width: 300px;
-     position: absolute;
+     position: fixed;
     background-color: #fff;
     transform: translateX(-300px);
     z-index:98;
@@ -80,6 +80,7 @@ body{
 
 .navs-links{
     list-style: none;
+    font-size:13px;
 }
 
 .navs-links a{
@@ -109,7 +110,7 @@ visibility: hidden ;
 }
 
 .toggle{
-    position: absolute;
+    position: fixed;
     height:30px;
     width: 30px;
     top: 15px;
