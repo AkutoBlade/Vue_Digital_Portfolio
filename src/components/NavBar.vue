@@ -11,7 +11,7 @@
         <div class="slide">
         <h1 id="Menu">MENU</h1>
         <ul>
-        <li class="navs-links"><router-link to="/"><i class="fa-solid fa-house-chimney"></i> HOME</router-link></li>
+        <li class="navs-links"><a href="/" :key="$route.fullPath"><i class="fa-solid fa-house-chimney"></i> HOME</a></li>
         <li class="navs-links"><router-link to="/about"><i class="fa-solid fa-circle-info"></i> ABOUT</router-link></li>
         <li class="navs-links"><router-link to="/resume"><i class="fa-solid fa-address-card"></i> RESUME</router-link></li>
         <li class="navs-links"><router-link to="/project"><i class="fa-solid fa-list-check"></i> PROJECTS</router-link></li>

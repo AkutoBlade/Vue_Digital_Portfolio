@@ -19,17 +19,12 @@
        <br>
        <span id="divider"></span>
        <br>
-        <!-- <h1>
-  <a href="" class="typewrite" data-period="2000" data-type='[ "Jared Isaacs..", "I am an Aspiring Web-Developer...", "I am an Aspiring App-Developer...", "I am a Freelancer."  ]'>
-    <span class="wrap"></span>
-  </a>
-</h1> -->
 <transition name="fade-up" appear>
     <div id="Icon">
- <a href=""><i class="py-2 px-2 fa-brands fa-github"></i></a> 
-<a href=""><i class="py-2 px-2 fa-brands fa-linkedin"></i></a>
-<a href=""><i class="py-2 px-2 fa-brands fa-codepen"></i></a> 
-<a href=""><i class="py-2 px-2 fa-brands fa-twitter"></i></a>
+ <a class="space" href=""><i class="py-2 px-1 fa-brands fa-github"></i></a>
+<a class="space" href=""><i class="py-2 px-1 fa-brands fa-linkedin"></i></a>
+<a class="space" href=""><i class="py-2 px-1 fa-brands fa-codepen"></i></a> 
+<a class="space" href=""><i class="py-2 px-1 fa-brands fa-twitter"></i></a>
  </div>
  </transition>
 
@@ -104,7 +99,10 @@ var TxtType = function(el, toRotate, period) {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
-    overflow-y:hidden;
+}
+
+.spaced{
+overflow-x:hidden;
 }
 
 
@@ -151,6 +149,7 @@ width:65%
     font-size:25px;
     gap: 10px;
     text-shadow: 0vw 0vw 10px white;
+    overflow-x:hidden;
 }
 #Icon{
     display: flex;

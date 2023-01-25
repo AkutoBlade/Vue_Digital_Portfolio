@@ -131,7 +131,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  height: 180vh;
   background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 }
 
@@ -215,13 +215,21 @@ font-size:13px;
 
 }
 
-
+@media(max-width:2560px) {
+  .images {
+  width: 22%!important;
+  border-radius: 10%;
+  position: absolute;
+  right: 67%;
+  top: 11%!important;
+}
+}
 @media(max-width:1440px){
 #About {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 96vh;
+  height: 100vh;
   background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 }
 
@@ -230,7 +238,7 @@ font-size:13px;
   border-radius: 10%;
   position: absolute;
   right: 67%;
-  top: 9%!important;
+  top: 15%!important;
 }
 
 .skills {

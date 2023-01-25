@@ -166,9 +166,7 @@ iframe {
 
 .bg-contact100 {
   width: 100%;  
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 }
 
 .container-contact100 {
@@ -183,15 +181,14 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #8000ff;
 }
 
 .wrap-contact100 {
-  width: 1163px;
-  background: #fff;
+ width: 1051px;
+  height: 566px;
   border-radius: 10px;
   overflow: hidden;
-
+  opacity: 0.900;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -201,6 +198,19 @@ iframe {
   justify-content: space-between;
   padding: 110px 130px 157px 148px;
   box-shadow: 0vw 0vw 1vw black;
+}
+
+.wrap-contact100 {
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 110px 130px 157px 148px;
+    box-shadow: 0vw 0vw 1vw black;
+    
 }
 
 /*------------------------------------------------------------------

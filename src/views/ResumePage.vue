@@ -46,10 +46,15 @@
   </div>
   </div>
 </section>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 <script>
+import Footer from "../components/Footer.vue";
 export default {
-    
+  name: "footer",
+  components: { Footer },
 }
 </script>
 <style scoped>
@@ -57,10 +62,10 @@ export default {
     flex-direction: column;
     align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background: url("../assets/LandingPage.jpg")no-repeat center center/cover;
     width:100%;
-    min-height: 100vh;
+    min-height: 160vh;
 background-attachment: fixed;
 overflow-x:hidden
   }
@@ -82,11 +87,12 @@ overflow-x:hidden
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     width: 50%;
+    margin-bottom: 2%;
   }
   .timeline-section:nth-of-type(even) {
     flex-direction: row-reverse;
     text-align: right;
-    margin-botttom: 2%;
+    margin-bottom: 2%;
   }
   
   .timeline-section:nth-of-type(odd) {
