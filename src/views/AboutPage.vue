@@ -126,6 +126,25 @@ export default {
   opacity:0.9;
 }
 
+#Box:hover{
+  box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+  animation: pulse-purple 2s infinite;
+}
+
+@keyframes pulse-purple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+  }
+  
+  70% {
+    box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+  }
+  
+  100% {
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+  }
+}
+
 
 #About {
   display: flex;
@@ -277,6 +296,7 @@ display:block !important;
   background: linear-gradient(white, #8000ff);
   overflow-y: hidden;
 }
+
 
 .Bio {
   padding-top: 0px !important;

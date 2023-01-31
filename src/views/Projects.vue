@@ -148,7 +148,7 @@ background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 background-size: cover;
 background-position: center;
 object-fit: cover;
-width:99.61vw;
+width:101vw;
 }
 
 

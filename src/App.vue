@@ -17,6 +17,17 @@ export default {
   user-select: none;
 }
 
+::-webkit-scrollbar {
+  width: 9px;
+  height: 2px;
+}
+::-webkit-scrollbar-track {
+  background: white;   
+}
+::-webkit-scrollbar-thumb {
+  background:#8000ff;
+}
+
 html{
   background-color: #8000ff;
 }

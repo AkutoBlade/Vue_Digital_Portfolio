@@ -1,7 +1,7 @@
 <template>
    <header>
     <input type="checkbox" id="checkBox">
-    <div  class="toggle" @click="handleEvent">
+    <div  class="toggle" @click="handleEvent()">
         <span class="top_line common"></span>
         <span class="middle_line common"></span>
         <span class="bottom_line common"></span>
@@ -29,6 +29,9 @@ export default {
             isChecked: false
         }
     },
+    mounted(){
+        window.addEventListener('keydown', this.keyPress);
+    },
     methods: {
         handleEvent() {
            this.isChecked = !this.isChecked;
@@ -41,6 +44,12 @@ export default {
             if (this.isChecked == false){ 
             document.querySelector("#checkBox").checked = false;
              document.querySelector('.slide').style.transform= "translateX(-300px)"
+            }
+        },
+        keyPress(event){
+            if(event.code === 'Enter'){
+               this.handleEvent()
+                console.log(e)
             }
         }
     }
@@ -65,8 +74,30 @@ body{
      position: fixed;
     background-color: #fff;
     transform: translateX(-300px);
-    z-index:98;
+    z-index:3;
     overflow:hidden;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.slide:hover{
+  box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+  animation: pulse-purple 2s infinite;
+}
+
+@keyframes pulse-purple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+  }
+  
+  70% {
+    box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+  }
+  
+  100% {
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+  }
 }
 
 #Menu{
@@ -114,7 +145,7 @@ visibility: hidden ;
     height:30px;
     width: 30px;
     top: 15px;
-    left: 11px;
+    left: 17px;
     z-index: 1;
     cursor: pointer;
     border-radius: 2px;

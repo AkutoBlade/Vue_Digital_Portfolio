@@ -186,7 +186,7 @@ iframe {
 .wrap-contact100 {
  width: 1051px;
   height: 566px;
-  border-radius: 10px;
+  border-radius: 50px;
   overflow: hidden;
   opacity: 0.900;
   display: -webkit-box;
@@ -203,7 +203,7 @@ iframe {
 .wrap-contact100 {
 
     background: #fff;
-    border-radius: 10px;
+    border-radius: 50px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;

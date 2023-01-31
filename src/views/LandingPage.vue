@@ -263,6 +263,7 @@ width:80% !important;
   box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
   animation: pulse-purple 2s infinite;
   position: relative;
+  z-index: 2;
 }
 
 @keyframes pulse-purple {
