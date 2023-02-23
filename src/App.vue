@@ -13,7 +13,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 *{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Varela Round';
   user-select: none;
 }
 
@@ -29,7 +29,7 @@ export default {
 }
 
 html{
-  background-color: #8000ff;
+  overflow-x: hidden;
 }
 
 body{

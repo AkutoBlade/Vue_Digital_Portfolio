@@ -9,6 +9,8 @@ const routes = [
   {
     path: '/',
     name: 'landing',
+    data: 'show',
+    props:true,
     component: () => import('../views/LandingPage.vue')
   },
   {

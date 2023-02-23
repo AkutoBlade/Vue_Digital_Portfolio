@@ -379,7 +379,18 @@ textarea.input100 {
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
+@media(max-width:2560px) and (min-width:1441px){
+	.wrap-contact100{
+		width: 60vw;
+        height: 800px;
+	}
 
+.bg-contact100 {
+  width: 100%; 
+  height:100vh; 
+  background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
+}
+}
 @media (max-width: 1200px) {
   .contact100-pic {
     width: 33.5%;

@@ -1,6 +1,8 @@
 <template>
    <header>
     <input type="checkbox" id="checkBox">
+    <input type="checkbox" id="social">
+    <input type="checkbox" id="infoCheck">
     <div  class="toggle" @click="handleEvent()">
         <span class="top_line common"></span>
         <span class="middle_line common"></span>
@@ -47,7 +49,7 @@ export default {
             }
         },
         keyPress(event){
-            if(event.code === 'Enter'){
+            if(event.code === 'KeyD'){
                this.handleEvent()
                 console.log(e)
             }
@@ -77,14 +79,11 @@ body{
     z-index:3;
     overflow:hidden;
     border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px ;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+    animation: pulse-purple 2s infinite;
 }
 
-.slide:hover{
-  box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
-  animation: pulse-purple 2s infinite;
-}
 
 @keyframes pulse-purple {
   0% {
@@ -102,11 +101,12 @@ body{
 
 #Menu{
     color: #8000ff;
-    font-weight: 800;
+    font-weight: 300;
     text-align: right;
     padding: 10px 0;
     padding-right: 90px;
     pointer-events: none;
+    text-shadow: 0vw 0vw 10px #8000ff ;
 }
 
 .navs-links{
@@ -140,6 +140,20 @@ visibility: hidden ;
 -webkit-appearance: none;
 }
 
+#social{
+    display: none;
+    visibility: hidden ;
+    -webkit-appearance: none;
+}
+
+#infoCheck{
+    display: none;
+    visibility: hidden ;
+    -webkit-appearance: none;
+}
+
+
+
 .toggle{
     position: fixed;
     height:30px;
@@ -151,7 +165,7 @@ visibility: hidden ;
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 99;
+    z-index: 4;
 }
 
 .toggle .common{
@@ -184,21 +198,21 @@ visibility: hidden ;
     transform: translate(-50%,-50%);
 }
 
-input:checked ~ .toggle .top_line{
+#checkBox:checked ~ .toggle .top_line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(45deg);
 }
 
-input:checked ~ .toggle .bottom_line{
+#checkBox:checked ~ .toggle .bottom_line{
     left: 2px;
     top: 14px;
     width: 25px;
     transform: rotate(-45deg);
 }
 
-input:checked ~ .toggle .middle_line{
+#checkBox:checked ~ .toggle .middle_line{
    opacity: 0;
     transform: translateX(20px);
 }
@@ -209,11 +223,20 @@ input:checked ~ .slide{
 .navs-links>a:hover{
 color: white;
 }
+
+.navs-links{
+    transition: 0.9s;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 .navs-links:hover{
+    transition: 1s;
     color: white;
     background-color: #8000ff;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     transition: all 1.5s ease;
+    text-shadow: 0vw 0vw 10px white;
 }
 </style>

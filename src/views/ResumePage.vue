@@ -3,7 +3,7 @@
         <div class="timeline" id="timeline">
           <div class="line"></div>
         
-  <div class="timeline-section bg-light text-dark timeline-right aos-init aos-animate" data-aos="fade-right">
+  <div class="timeline-section bg-light text-dark timeline-right">
       <p class="timeline-header">2022 - Present</p>
       <div class="timeline-content">
         <h4 class="timeline-title">Life Choices - <span class="timeline-role">Student /Aspiring Web Developer</span></h4>
@@ -24,7 +24,7 @@
       </div> -->
   </div>
 
-  <div class="timeline-section bg-light text-dark aos-init aos-animate" data-aos="fade-left">
+  <div class="timeline-section bg-light text-dark">
       <p class="timeline-header">2021</p>
       <div class="timeline-content">
         <h4 class="timeline-title">Spine Road- <span class="timeline-role">I.T student</span></h4>
@@ -65,7 +65,7 @@ export default {
     justify-content: flex-start;
     background: url("../assets/LandingPage.jpg")no-repeat center center/cover;
     width:100%;
-    min-height: 160vh;
+    height: 170vh;
 background-attachment: fixed;
 overflow-x:hidden
   }
@@ -109,6 +109,7 @@ overflow-x:hidden
     text-transform: uppercase;
     background-color:#8000ff ;
     color:white;
+    text-shadow: 0vw 0vw 10px white;
     border-radius: 150px;
 
   }
@@ -169,7 +170,36 @@ overflow-x:hidden
     border-radius: 50px;
     margin-top: 20px;
     font-size: 1rem;
+    animation: pulse-box 2s infinite;
   }
+
+  @keyframes pulse-box {
+  0% {
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+  }
+}
+
+@media(max-width:2560px) and (min-width:1441px) {
+  #history {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    background: url("../assets/LandingPage.jpg")no-repeat center center/cover;
+    width:100%;
+    height: 100vh;
+background-attachment: fixed;
+overflow-x:hidden
+  }
+}
   @media screen and (max-width: 790px) {
     .timeline-section,
     .timeline-modal {

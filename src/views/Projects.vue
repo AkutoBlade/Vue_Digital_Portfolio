@@ -4,7 +4,7 @@
       <div class="d-flex flex-nowrap container">
         <div class="projects-card project-one" :style="{ 'background-image': 'url(' + project.img + ')'}">
 		<div class="project-info-container">
-			<h3 class="project-title">{{ project.title }}</h3>  
+			<h3 class="project-titles">{{ project.title }}</h3>  
 			<span class="project-load-bar" ></span>
 			<p class="project-short-desc">{{ project.desc }}</p> 
 			<button class="project-btn"> <a :href="project.live">Live</a> </button>
@@ -123,6 +123,21 @@ export default {
 };
 </script>
 <style scoped>
+/* variables */
+:root {
+	/* Color */
+	--main-color:#8000ff;
+	--secondary-color: #fff;
+
+
+	/* Font-size */
+	--font-size-main-title: 6rem;
+	--font-size-secondary-title: 2.5rem;
+	--font-size-section-title: 3rem;
+	--font-size-project-title: 2em;
+	--font-size-text: 1.2rem;
+	--font-size-btn: 1.6rem;
+} 
 *,
 *::before,
 *::after {
@@ -148,7 +163,7 @@ background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 background-size: cover;
 background-position: center;
 object-fit: cover;
-width:101vw;
+width:90vw;
 }
 
 
@@ -187,24 +202,11 @@ width:101vw;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
 
-/* variables */
-:root {
-	/* Color */
-	--main-color:#8000ff;
-	--secondary-color: #fff;
 
-
-	/* Font-size */
-	--font-size-main-title: 6rem;
-	--font-size-secondary-title: 2.5rem;
-	--font-size-section-title: 3rem;
-	--font-size-project-title: 2em;
-	--font-size-text: 1.2rem;
-	--font-size-btn: 1.6rem;
-} 
 
 * {
 	box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -247,9 +249,9 @@ body, html {
 	overflow: hidden;
 }
 
-.project-title {
+.project-titles {
 	font-size: var(--font-size-project-title);
-	color: var(--main-color);
+	color: #8000ff;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin: 1em 0 .3em 0;
@@ -314,7 +316,7 @@ body, html {
 }
 
 
-.projects-card:hover .project-title {
+.projects-card:hover{
 	color: #fff;
 }
 
@@ -352,10 +354,24 @@ body, html {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+@media(max-width:2560px) and (min-width:1441px){
+  .projects-card{
+    width: 70em;
+  }
 
+  section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+  padding-left: 15px;
+  overflow-y: hidden;
+}
+}
 @media(min-width:1440PX){
 .bgimg{
-width:100.8vw;
+width:100.481vw;
 }
 }
 

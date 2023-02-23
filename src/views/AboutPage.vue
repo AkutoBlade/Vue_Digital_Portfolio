@@ -21,80 +21,80 @@
         <div class="divider-2"></div>
         <div class="skills">
           <div class="col-md-6 right">
-            <h3 class="Display-1 text-center text-ligh skill_sizet overflow-hidden">
+            <h3 class="Display-1 sub text-center text-light skill_sizet overflow-hidden">
               Technical Skills
             </h3>
             <div class="row py-1 paddings">
-              <h6 class="text-start overflow-hidden">MySQL</h6>
+              <h6 class="text-start overflow-hidden text-light">MySQL</h6>
               <div class="progress">
                 <div
                   class="progress-bar"
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 75%"
+                  style="width: 85%"
                 ></div>
               </div>
             </div>
             <div class="row py-1 paddings">
-              <h6 class="text-start overflow-hidden">HTML</h6>
+              <h6 class="text-start overflow-hidden text-light">HTML</h6>
               <div class="progress">
                 <div
                   class="progress-bar"
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 75%"
+                  style="width: 100%"
                 ></div>
               </div>
             </div>
             <div class="row py-1 paddings">
-              <h6 class="text-start overflow-hidden">CSS3</h6>
+              <h6 class="text-start overflow-hidden text-light">CSS3</h6>
               <div class="progress">
                 <div
                   class="progress-bar"
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 75%"
+                  style="width: 90%"
                 ></div>
               </div>
             </div>
             <div class="row py-1 paddings">
-              <h6 class="text-start overflow-hidden">BootStrap</h6>
+              <h6 class="text-start overflow-hidden text-light">BootStrap</h6>
               <div class="progress">
                 <div
                   class="progress-bar"
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 75%"
+                  style="width: 110%"
                 ></div>
               </div>
             </div>
             <div class="row py-1 paddings">
-              <h6 class="text-start overflow-hidden">JavaScript</h6>
+              <h6 class="text-start overflow-hidden text-light">JavaScript</h6>
               <div class="progress">
                 <div
                   class="progress-bar"
                   aria-valuenow="75"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="width: 75%"
+                  style="width: 95%"
                 ></div>
               </div>
             </div>
           </div>
           <div class="col-md-6 left">
-            <h3 class="Display-1 text-center text-light overflow-hidden">
+            <h3 class="Display-1 text-center sub text-light overflow-hidden">
               Soft Skills
             </h3>
             <ul class="list">
-              <li class="py-1 skill_size">Emotional Intelligients</li>
-              <li class="py-1 skill_size">Growing Mindset</li>
-              <li class="py-1 skill_size">Team Player Attitude</li>
-              <li class="py-1 skill_size">Adaptability</li>
-              <li class="py-1 skill_size">Problem Solving Skills</li>
+              <li class="py-1 skill_size text-light">Emotional Intelligients</li>
+              <li class="py-1 skill_size text-light">Growing Mindset</li>
+              <li class="py-1 skill_size text-light">Team Player Attitude</li>
+              <li class="py-1 skill_size text-light">Adaptability</li>
+              <li class="py-1 skill_size text-light">Problem Solving Skills</li>
             </ul>
           </div>
         </div>
@@ -118,18 +118,15 @@ export default {
 }
 #Box {
   width: 90vw;
-  height: 500px;
-  box-shadow: 0vw 0vw 2vw;
+  height: 900px;
   border-radius: 50px;
   background: linear-gradient(white, #8000ff);
   overflow-y: hidden;
   opacity:0.9;
-}
-
-#Box:hover{
   box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
   animation: pulse-purple 2s infinite;
 }
+
 
 @keyframes pulse-purple {
   0% {
@@ -170,14 +167,19 @@ font-size:13px;
 .About-Me {
   padding-top: 10px;
   overflow: hidden;
-  text-shadow: -5px 1px 8px black;
+  text-shadow: -5px 1px 8px #8000ff;
   color: white;
+}
+
+.sub{
+  text-shadow: 0vw 0vw 10px white;
 }
 .Bio {
   padding-top: 10px;
   padding-left: 10px;
   overflow: hidden;
   color: #8000ff;
+  text-shadow: 0vw 0vw 10px #8000ff;
 }
 .divider-2 {
   border-bottom: 2px solid white;
@@ -230,7 +232,7 @@ font-size:13px;
   border-radius: 10%;
   position: absolute;
   right: 65%;
-  top: 10%;
+  top: 70%;
 
 }
 
@@ -240,7 +242,15 @@ font-size:13px;
   border-radius: 10%;
   position: absolute;
   right: 67%;
-  top: 11%!important;
+  top: 13%!important;
+}
+
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 }
 }
 @media(max-width:1440px){
@@ -252,12 +262,23 @@ font-size:13px;
   background: url("../assets/ContactPage.jpg") no-repeat center center/cover;
 }
 
+#Box {
+  width: 90vw;
+  height: 500px;
+  border-radius: 50px;
+  background: linear-gradient(white, #8000ff);
+  overflow-y: hidden;
+  opacity:0.9;
+  box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+  animation: pulse-purple 2s infinite;
+}
+
 .images {
   width: 22%!important;
   border-radius: 10%;
   position: absolute;
   right: 67%;
-  top: 15%!important;
+  top: 10%!important;
 }
 
 .skills {
@@ -277,7 +298,7 @@ display:block !important;
   border-radius: 10%;
   position: absolute;
   right: 65%;
-  top: 10%!important;
+  top: 12%!important;
 }
 
 .skills {
